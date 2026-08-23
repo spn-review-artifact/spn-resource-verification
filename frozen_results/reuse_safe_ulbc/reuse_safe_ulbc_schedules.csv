@@ -1,0 +1,10 @@
+variant,sbox_schedule,sboxes_per_group,groups_per_round,rounds,t_count,t_depth,logical_cnot,compiled_full_depth_upper,tight_peak_width,fixed_workspace_width,round_t_depth,ordinary_round_full_depth_upper,final_round_full_depth_upper,full_depth_status
+uLBC-128,fully-parallel,32,1,18,18432,72,52352,1813,704,704,4,101,95,compiled-upper-bound-not-exact-hardware-depth
+uLBC-128,four-group,8,4,18,18432,288,52352,6889,368,384,16,383,377,compiled-upper-bound-not-exact-hardware-depth
+uLBC-128,fully-serial,1,32,18,18432,2304,52352,54265,270,384,128,3015,3009,compiled-upper-bound-not-exact-hardware-depth
+uLBC-256,fully-parallel,32,1,22,22528,88,67520,2261,832,832,4,103,97,compiled-upper-bound-not-exact-hardware-depth
+uLBC-256,four-group,8,4,22,22528,352,67520,8465,496,512,16,385,379,compiled-upper-bound-not-exact-hardware-depth
+uLBC-256,fully-serial,1,32,22,22528,2816,67520,66369,398,512,128,3017,3011,compiled-upper-bound-not-exact-hardware-depth
+uLBC-384t,fully-parallel,32,1,30,30720,120,96896,3115,960,960,4,104,98,compiled-upper-bound-not-exact-hardware-depth
+uLBC-384t,four-group,8,4,30,30720,480,96896,11575,624,640,16,386,380,compiled-upper-bound-not-exact-hardware-depth
+uLBC-384t,fully-serial,1,32,30,30720,3840,96896,90535,526,640,128,3018,3012,compiled-upper-bound-not-exact-hardware-depth

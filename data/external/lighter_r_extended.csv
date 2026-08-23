@@ -1,0 +1,5 @@
+target,lut,status,elapsed_seconds,candidates,verified,X,CNOT,CCNOT,t7,nct_asap_depth,width,verification
+RECTANGLE,65CA1E79B03D8F42,completed,98.65358138084412,3,3,4,3,4,28,8,4,pass-16/16
+Piccolo,E4B238091A7F6C5D,completed,68.85203051567078,1,1,7,0,4,28,6,4,pass-16/16
+KLEIN,74A91FB0C3268ED5,completed,590.3286283016205,1,1,2,6,5,35,11,4,pass-16/16
+PRIDE,048F15E927ACBD63,completed,69.87664723396301,1,1,0,0,4,28,4,4,pass-16/16

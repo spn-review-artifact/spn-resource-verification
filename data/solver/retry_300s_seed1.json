@@ -1,0 +1,105 @@
+{
+  "command": "retry_unknown_minimum.py --timeout-ms 300000 --seed 1 --jobs 4",
+  "z3": "4.16.0",
+  "source": "minimum_and_search.json",
+  "summaries": [
+    {
+      "cipher": "GIFT",
+      "total_k": 4,
+      "k1": 2,
+      "k2": 2,
+      "retry_statuses": [
+        "unsat"
+      ],
+      "conclusion": "resolved-unsat"
+    },
+    {
+      "cipher": "PRINCE",
+      "total_k": 4,
+      "k1": 2,
+      "k2": 2,
+      "retry_statuses": [
+        "unsat"
+      ],
+      "conclusion": "resolved-unsat"
+    },
+    {
+      "cipher": "PRINCE",
+      "total_k": 5,
+      "k1": 2,
+      "k2": 3,
+      "retry_statuses": [
+        "unknown"
+      ],
+      "conclusion": "still-unresolved"
+    },
+    {
+      "cipher": "PRINCE",
+      "total_k": 5,
+      "k1": 3,
+      "k2": 2,
+      "retry_statuses": [
+        "unknown"
+      ],
+      "conclusion": "still-unresolved"
+    }
+  ],
+  "attempts": [
+    {
+      "cipher": "GIFT",
+      "total_k": 4,
+      "k1": 2,
+      "k2": 2,
+      "seed": 1,
+      "timeout_ms": 300000,
+      "solver_status": "unsat",
+      "runtime_seconds": 165.331957,
+      "constraints": 72,
+      "smt2_bytes": 148100,
+      "truth_table_check": "not-run",
+      "netlist": ""
+    },
+    {
+      "cipher": "PRINCE",
+      "total_k": 4,
+      "k1": 2,
+      "k2": 2,
+      "seed": 1,
+      "timeout_ms": 300000,
+      "solver_status": "unsat",
+      "runtime_seconds": 54.292694,
+      "constraints": 72,
+      "smt2_bytes": 148100,
+      "truth_table_check": "not-run",
+      "netlist": ""
+    },
+    {
+      "cipher": "PRINCE",
+      "total_k": 5,
+      "k1": 2,
+      "k2": 3,
+      "seed": 1,
+      "timeout_ms": 300000,
+      "solver_status": "unknown",
+      "runtime_seconds": 300.023045,
+      "constraints": 74,
+      "smt2_bytes": 97188,
+      "truth_table_check": "not-run",
+      "netlist": ""
+    },
+    {
+      "cipher": "PRINCE",
+      "total_k": 5,
+      "k1": 3,
+      "k2": 2,
+      "seed": 1,
+      "timeout_ms": 300000,
+      "solver_status": "unknown",
+      "runtime_seconds": 300.031105,
+      "constraints": 74,
+      "smt2_bytes": 97332,
+      "truth_table_check": "not-run",
+      "netlist": ""
+    }
+  ]
+}

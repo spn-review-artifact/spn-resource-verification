@@ -1,0 +1,37 @@
+# cipher: Midori
+# generated_by: sample_sbox_models.py
+# fixed_configuration: k1=2, k2=2
+# distinct_model_index: 179
+# optimal_cnot_claim: none
+
+TR1_0_0=X0+X2
+M1_0=X0*TR1_0_0
+TR1_1_0=X0+X2
+M1_1=X3*TR1_1_0
+TL2_0_0=X0+X3
+TL2_0_1=TL2_0_0+M1_1
+TR2_0_0=X1+X2
+TR2_0_1=TR2_0_0+M1_0
+TR2_0_2=TR2_0_1+M1_1
+M2_0=TL2_0_1*TR2_0_2
+TL2_1_0=X1+X3
+TL2_1_1=TL2_1_0+M1_0
+TL2_1_2=TL2_1_1+M1_1
+TR2_1_0=X0+M1_0
+TR2_1_1=TR2_1_0+M1_1
+M2_1=TL2_1_2*TR2_1_1
+TY0_0=X0+X1
+TY0_1=TY0_0+M1_0
+TY0_2=TY0_1+M2_1
+Y0=TY0_2
+TY1_0=X2+M1_0
+TY1_1=TY1_0+M1_1
+Y1=TY1_1
+TY2_0=X0+X3
+TY2_1=TY2_0+M2_1
+Y2=TY2_1
+Y2=Y2+1
+TY3_0=X0+M1_1
+TY3_1=TY3_0+M2_0
+Y3=TY3_1
+Y3=Y3+1

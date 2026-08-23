@@ -1,0 +1,7 @@
+sbox,qusat_clean_t_count_4t,qusat_clean_t_depth,lighter_r_clean_t_count_4t,lighter_r_clean_t_depth,dorcis_published_t_depth,dorcis_status
+PRESENT,16,2,32,8,4,published-only
+GIFT,20,2,32,8,4,published-only
+Midori,16,2,32,8,,not-reported
+PRINCE,24,2,40,10,5,published-only
+SKINNY,16,2,32,8,4,published-only
+uLBC,16,2,32,8,,not-reported

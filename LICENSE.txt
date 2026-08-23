@@ -1,0 +1,19 @@
+Anonymous Research Verification License, Version 1.0
+
+Copyright (c) 2026 The anonymous authors. All rights reserved.
+
+Permission is granted to download, execute, and inspect the files in this
+repository solely for non-commercial scholarly review, verification,
+education, and research concerning the accompanying manuscript. Results may
+be quoted with appropriate citation to the final paper and this artifact.
+
+No permission is granted to relicense, sell, sublicense, commercially exploit,
+or incorporate the released implementation into a commercial product. The
+release does not grant rights to unreleased synthesis code, search heuristics,
+or other methods described as excluded in ARTIFACT_SCOPE.md.
+
+Files and data derived from third-party publications or tools remain subject
+to their original copyrights and licenses. No warranty is provided. The
+software and data are supplied "as is", without any express or implied
+warranty, including merchantability, fitness for a particular purpose, and
+non-infringement.

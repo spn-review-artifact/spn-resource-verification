@@ -1,0 +1,42 @@
+# cipher: GIFT
+# generated_by: sample_sbox_models.py
+# fixed_configuration: k1=1, k2=4
+# distinct_model_index: 7
+# optimal_cnot_claim: none
+
+TL1_0_0=X2+X3
+M1_0=TL1_0_0*X2
+TL2_0_0=X0+X1
+M2_0=TL2_0_0*X1
+TL2_1_0=X0+X2
+TL2_1_1=TL2_1_0+M1_0
+TR2_1_0=X0+M1_0
+M2_1=TL2_1_1*TR2_1_0
+TL2_2_0=X1+M1_0
+TR2_2_0=X0+X3
+M2_2=TL2_2_0*TR2_2_0
+TL2_3_0=X0+X1
+TL2_3_1=TL2_3_0+X2
+TL2_3_2=TL2_3_1+M1_0
+TR2_3_0=X0+X2
+TR2_3_1=TR2_3_0+X3
+TR2_3_2=TR2_3_1+M1_0
+M2_3=TL2_3_2*TR2_3_2
+TY0_0=X0+X2
+TY0_1=TY0_0+X3
+TY0_2=TY0_1+M2_0
+Y0=TY0_2
+Y0=Y0+1
+TY1_0=X1+X2
+TY1_1=TY1_0+X3
+TY1_2=TY1_1+M2_0
+TY1_3=TY1_2+M2_1
+Y1=TY1_3
+TY2_0=X0+X2
+TY2_1=TY2_0+M2_0
+TY2_2=TY2_1+M2_3
+Y2=TY2_2
+TY3_0=X1+M2_0
+TY3_1=TY3_0+M2_1
+TY3_2=TY3_1+M2_2
+Y3=TY3_2

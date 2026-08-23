@@ -1,0 +1,42 @@
+{
+  "source": "Public uLBC VHDL testbenches for 128-bit block variants",
+  "state_order": "hexadecimal most-significant nibble first",
+  "vectors": [
+    {
+      "variant": "uLBC-128",
+      "plaintext": "2d33f9e14c935dc3150e07ef14909c24",
+      "key": "2f5a39f65ef0d47b4c2ae6b521fb0a08",
+      "ciphertext": "5384bf47150a1f05059c1e704894ca21"
+    },
+    {
+      "variant": "uLBC-128",
+      "plaintext": "00000000000000000000000000000000",
+      "key": "00000000000000000000000000000000",
+      "ciphertext": "e6b6b249c25994a425c480b852f4899a"
+    },
+    {
+      "variant": "uLBC-256",
+      "plaintext": "2d6430850cad830b53764dad7be5c3a9",
+      "key": "2990cbcb613391be00a582cd722e610f42e65a592135ab5f4a85fb01222224e0",
+      "ciphertext": "b6cfa6a590dba5eaa5a7004e5a8339f4"
+    },
+    {
+      "variant": "uLBC-256",
+      "plaintext": "00000000000000000000000000000000",
+      "key": "0000000000000000000000000000000000000000000000000000000000000000",
+      "ciphertext": "fb0be7250cfd59a9d2712fb1899ff396"
+    },
+    {
+      "variant": "uLBC-384t",
+      "plaintext": "2d7d941a0f864e4b3a7e25e32fe97815",
+      "key": "08cac34637da2d2c54cbc0590cc13e8d62f1a18565a355824642fdef582d79f211a12c186c55e4b27b1999ae4db8ada5",
+      "ciphertext": "6bfe00ba63397825379e397efa11d15a"
+    },
+    {
+      "variant": "uLBC-384t",
+      "plaintext": "00000000000000000000000000000000",
+      "key": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "ciphertext": "64adeb0232294d9c1e268365764e674a"
+    }
+  ]
+}

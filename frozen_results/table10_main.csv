@@ -1,0 +1,24 @@
+cipher,source,block_bits,key_bits,encryption_calls,scope,t_model,t_count_4t,t_count_exact_7t,t_count_unitary,cnot,cnot_model,qubits,comparison_group,comparison_status
+GIFT,Bijwe et al.,128,128,2,clean-mapping-2E,exact-7T,,71680,,174336,published-compiled,388,gift128-2e,model-matched-at-exact-7T
+GIFT,Bijwe et al.,64,128,2,clean-mapping-2E,exact-7T,,25088,,61056,published-compiled,260,gift64-2e,model-matched-at-exact-7T
+SKINNY,Bijwe et al.,64,64,2,clean-mapping-2E,exact-7T,,28672,,73792,published-compiled,196,skinny64-64-2e,model-matched-at-exact-7T
+SKINNY,Bijwe et al.,64,128,2,clean-mapping-2E,exact-7T,,32256,,85888,published-compiled,260,skinny64-128-2e,model-matched-at-exact-7T
+SKINNY,Bijwe et al.,64,192,2,clean-mapping-2E,exact-7T,,35840,,98624,published-compiled,324,skinny64-192-2e,model-matched-at-exact-7T
+PRESENT,Jang et al.,64,128,1,encryption-1E,exact-7T,,15624,,4838,published-NCT,192,present-context,descriptive-different-mapping
+GIFT,Jang et al.,64,128,1,encryption-1E,exact-7T,,12544,,1792,published-NCT,192,gift64-context,descriptive-different-scope
+GIFT,Jang et al.,128,128,1,encryption-1E,exact-7T,,43008,,6144,published-NCT,256,gift128-context,descriptive-different-scope
+PRINCE,Akhlaq et al.,64,128,1,published-cipher-estimate,unitary-matrix-decomposition,,,510580,89560,published-unitary,950,prince-unitary,non-normalizable-context
+Midori64,Akhlaq et al.,64,128,1,published-cipher-estimate,unitary-matrix-decomposition,,,4634112,810728,published-unitary,3900,midori-unitary,non-normalizable-context
+CHAM,Jang et al.,64,128,1,encryption-1E,exact-7T,,16800,,12285,published-NCT,196,cham-context,broader-context-only
+PIPO,Jang et al.,64,128,1,encryption-1E,exact-7T,,8736,,2248,published-NCT,192,pipo-context,broader-context-only
+GIFT,Ours,128,128,2,verified-core-2E,relative-phase-4T-and-exact-7T,40960,71680,,133376,compiled-selected-route,288,gift128-2e,model-matched-at-exact-7T
+GIFT,Ours,64,128,2,verified-core-2E,relative-phase-4T-and-exact-7T,14336,25088,,46720,compiled-selected-route,208,gift64-2e,model-matched-at-exact-7T
+SKINNY,Ours,64,64,2,verified-core-2E,relative-phase-4T-and-exact-7T,16384,28672,,62528,compiled-selected-route,144,skinny64-64-2e,model-matched-at-exact-7T
+SKINNY,Ours,64,128,2,verified-core-2E,relative-phase-4T-and-exact-7T,18432,32256,,73216,compiled-selected-route,208,skinny64-128-2e,model-matched-at-exact-7T
+SKINNY,Ours,64,192,2,verified-core-2E,relative-phase-4T-and-exact-7T,20480,35840,,84544,compiled-selected-route,272,skinny64-192-2e,model-matched-at-exact-7T
+PRESENT,Ours,64,128,1,reuse-safe-encryption-1E,clean-temporary-AND-4T-and-exact-7T,15872,55552,,57536,verified-logical,256,present-context,descriptive-different-mapping
+PRINCE,Ours,64,128,1,reuse-safe-encryption-1E,clean-temporary-AND-4T-and-exact-7T,9216,32256,,34560,verified-logical,256,prince-unitary,non-normalizable-context
+Midori64,Ours,64,128,1,reuse-safe-encryption-1E,clean-temporary-AND-4T-and-exact-7T,8192,28672,,26880,verified-logical,256,midori-unitary,non-normalizable-context
+uLBC,Ours,128,128,1,reuse-safe-encryption-1E,clean-temporary-AND-4T-and-exact-7T,18432,64512,,52352,verified-logical,384,ulbc128,proposed-only
+uLBC,Ours,128,256,1,reuse-safe-encryption-1E,clean-temporary-AND-4T-and-exact-7T,22528,78848,,67520,verified-logical,512,ulbc256,proposed-only
+uLBC,Ours,128,384,1,reuse-safe-encryption-1E,clean-temporary-AND-4T-and-exact-7T,30720,107520,,96896,verified-logical,640,ulbc384,proposed-only

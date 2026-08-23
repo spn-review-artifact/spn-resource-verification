@@ -1,0 +1,65 @@
+{
+  "bit_order": "input integer x uses Xi as bit i; LUT character x is the output nibble",
+  "sboxes": {
+    "PRESENT": {
+      "lut": "C56B90AD3EF84712",
+      "forward_netlist": "data/netlists/forward/present.netlist",
+      "inverse_netlist": "data/netlists/inverse/present_inverse.netlist",
+      "reported_k": 4,
+      "reported_and_depth": 2,
+      "reported_logical_cnot": 50,
+      "reported_width": 18,
+      "minimum_status": "minimum-proved-within-bounded-AND-depth-2-space"
+    },
+    "GIFT": {
+      "lut": "1A4C6F392DB7508E",
+      "forward_netlist": "data/netlists/forward/gift.netlist",
+      "inverse_netlist": "data/netlists/inverse/gift_inverse.netlist",
+      "reported_k": 5,
+      "reported_and_depth": 2,
+      "reported_logical_cnot": 49,
+      "reported_width": 19,
+      "minimum_status": "verified-best-found-lower-instance-unknown"
+    },
+    "Midori": {
+      "lut": "CAD3EBF789150246",
+      "forward_netlist": "data/netlists/forward/midori.netlist",
+      "inverse_netlist": "data/netlists/inverse/midori_inverse.netlist",
+      "reported_k": 4,
+      "reported_and_depth": 2,
+      "reported_logical_cnot": 55,
+      "reported_width": 20,
+      "minimum_status": "minimum-proved-within-bounded-AND-depth-2-space"
+    },
+    "PRINCE": {
+      "lut": "BF32AC916780E5D4",
+      "forward_netlist": "data/netlists/forward/prince.netlist",
+      "inverse_netlist": "data/netlists/inverse/prince_inverse.netlist",
+      "reported_k": 6,
+      "reported_and_depth": 2,
+      "reported_logical_cnot": 79,
+      "reported_width": 23,
+      "minimum_status": "verified-best-found-lower-instance-unknown"
+    },
+    "SKINNY": {
+      "lut": "C6901A2B385D4E7F",
+      "forward_netlist": "data/netlists/forward/skinny.netlist",
+      "inverse_netlist": "data/netlists/inverse/skinny_inverse.netlist",
+      "reported_k": 4,
+      "reported_and_depth": 2,
+      "reported_logical_cnot": 53,
+      "reported_width": 17,
+      "minimum_status": "minimum-proved-within-bounded-AND-depth-2-space"
+    },
+    "uLBC": {
+      "lut": "8015C7462A3DEFB9",
+      "forward_netlist": "data/netlists/forward/ulbc.netlist",
+      "inverse_netlist": "data/netlists/inverse/ulbc_inverse.netlist",
+      "reported_k": 4,
+      "reported_and_depth": 2,
+      "reported_logical_cnot": 41,
+      "reported_width": 18,
+      "minimum_status": "minimum-proved-within-bounded-AND-depth-2-space"
+    }
+  }
+}

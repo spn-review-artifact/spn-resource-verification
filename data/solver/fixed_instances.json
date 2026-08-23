@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "z3_generator_version": "4.16.0",
+  "encoding": "AND-depth-2 Boolean synthesis over all 16 inputs",
+  "instances": [
+    {
+      "cipher": "PRESENT",
+      "target_lut": "C56B90AD3EF84712",
+      "k1": 2,
+      "k2": 2,
+      "total_k": 4,
+      "and_depth": 2,
+      "expected_status": "sat",
+      "constraint_count": 72,
+      "file": "data/solver/present_k1-2_k2-2_fixed.smt2",
+      "bytes": 150751,
+      "sha256": "4b52ebbf614ee40ba957bfe420cb321f18e5d607c80c6f3b4e8ff26bf3613105",
+      "claim_scope": "feasibility-only-not-minimality"
+    },
+    {
+      "cipher": "GIFT",
+      "target_lut": "1A4C6F392DB7508E",
+      "k1": 1,
+      "k2": 4,
+      "total_k": 5,
+      "and_depth": 2,
+      "expected_status": "sat",
+      "constraint_count": 74,
+      "file": "data/solver/gift_k1-1_k2-4_fixed.smt2",
+      "bytes": 183250,
+      "sha256": "92ada325387c234917def6a988f06d17b97bbba9564a4c87a692cf6b56ede389",
+      "claim_scope": "feasibility-only-not-minimality"
+    },
+    {
+      "cipher": "Midori",
+      "target_lut": "CAD3EBF789150246",
+      "k1": 2,
+      "k2": 2,
+      "total_k": 4,
+      "and_depth": 2,
+      "expected_status": "sat",
+      "constraint_count": 72,
+      "file": "data/solver/midori_k1-2_k2-2_fixed.smt2",
+      "bytes": 150751,
+      "sha256": "1b671baed8ea01c44809c1b7e1fd9b471eebd22c48309ad5b5f6a9f90f147242",
+      "claim_scope": "feasibility-only-not-minimality"
+    },
+    {
+      "cipher": "PRINCE",
+      "target_lut": "BF32AC916780E5D4",
+      "k1": 2,
+      "k2": 4,
+      "total_k": 6,
+      "and_depth": 2,
+      "expected_status": "sat",
+      "constraint_count": 76,
+      "file": "data/solver/prince_k1-2_k2-4_fixed.smt2",
+      "bytes": 232758,
+      "sha256": "4b66110992a529e7bb04f2edec8ee880caa3c40fbab6ce3dc55eb31a8a56bcbe",
+      "claim_scope": "feasibility-only-not-minimality"
+    },
+    {
+      "cipher": "SKINNY",
+      "target_lut": "C6901A2B385D4E7F",
+      "k1": 1,
+      "k2": 3,
+      "total_k": 4,
+      "and_depth": 2,
+      "expected_status": "sat",
+      "constraint_count": 72,
+      "file": "data/solver/skinny_k1-1_k2-3_fixed.smt2",
+      "bytes": 147922,
+      "sha256": "ce406caab38808522c066af3be08c72fd5a0deb060577e96a21fe0b84aed1ec1",
+      "claim_scope": "feasibility-only-not-minimality"
+    },
+    {
+      "cipher": "uLBC",
+      "target_lut": "8015C7462A3DEFB9",
+      "k1": 1,
+      "k2": 3,
+      "total_k": 4,
+      "and_depth": 2,
+      "expected_status": "sat",
+      "constraint_count": 72,
+      "file": "data/solver/ulbc_k1-1_k2-3_fixed.smt2",
+      "bytes": 147930,
+      "sha256": "30b223769ec417665ec5d135dc3fb73e74233d0a3aac810d54e0e5ad3352bca1",
+      "claim_scope": "feasibility-only-not-minimality"
+    }
+  ],
+  "interpretation": "Each file freezes the exact feasibility constraints at the reported k1/k2 shape. SAT supports existence only; minimum claims additionally depend on the released bounded-search status records."
+}

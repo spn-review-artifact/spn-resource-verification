@@ -1,0 +1,81 @@
+{
+  "scope": "logical resource model used by the revised manuscript",
+  "sbox_transition": {
+    "construction": "forward clean oracle followed by inverse target-XOR clean oracle before the linear layer",
+    "forward": {
+      "and_count": 4,
+      "and_depth": 2,
+      "t_count_4t": 16,
+      "logical_cnot": 41,
+      "compiled_full_depth_upper": 46,
+      "clean_width_used": 18
+    },
+    "inverse": {
+      "and_count": 4,
+      "and_depth": 2,
+      "t_count_4t": 16,
+      "logical_cnot": 40,
+      "compiled_full_depth_upper": 48,
+      "clean_width_used": 12
+    }
+  },
+  "variants": {
+    "uLBC-128": {
+      "rounds": 18,
+      "key_bits": 128,
+      "block_bits": 128,
+      "pairs": 1,
+      "key_schedule_cnot": 0,
+      "key_schedule_depth_upper_per_round": 0
+    },
+    "uLBC-256": {
+      "rounds": 22,
+      "key_bits": 256,
+      "block_bits": 128,
+      "pairs": 2,
+      "key_schedule_cnot": 3520,
+      "key_schedule_depth_upper_per_round": 2
+    },
+    "uLBC-384t": {
+      "rounds": 30,
+      "key_bits": 384,
+      "block_bits": 128,
+      "pairs": 3,
+      "key_schedule_cnot": 9600,
+      "key_schedule_depth_upper_per_round": 3
+    }
+  },
+  "sbox_schedules": {
+    "fully-parallel": 32,
+    "four-group": 8,
+    "fully-serial": 1
+  },
+  "linear_and_key_layers": {
+    "initial_add_round_key_cnot": 128,
+    "ordinary_round_mixcolumn_cnot": 192,
+    "ordinary_round_add_constant_cnot": 128,
+    "round_add_key_cnot": 128,
+    "mixcolumn_full_depth": 5,
+    "add_constant_full_depth_upper": 1,
+    "add_round_key_full_depth": 1
+  },
+  "temporary_and_compilation": {
+    "t_compute_4t": 4,
+    "t_uncompute_measurement": 0,
+    "compiled_cnot_per_compute_uncompute_pair": 9,
+    "one_qubit_upper_per_pair": 7,
+    "measurements_per_pair": 1,
+    "compiled_full_depth_per_and_level": 12
+  },
+  "exact_7t_sensitivity": {
+    "t_per_clean_compute_uncompute_pair": 14,
+    "cnot_per_clean_compute_uncompute_pair": 14,
+    "one_qubit_per_clean_compute_uncompute_pair": 4,
+    "t_depth_multiplier_over_temporary_and_level": 6
+  },
+  "claim_limits": {
+    "full_depth": "compiled logical upper bound, not exact hardware depth",
+    "width": "fixed workspace is used in the main Grover tables; tight liveness peak is also reported",
+    "physical_cost": "no code distance, magic-state factory, routing, or wall-clock estimate"
+  }
+}

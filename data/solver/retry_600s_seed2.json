@@ -1,0 +1,57 @@
+{
+  "command": "retry_unknown_minimum.py --input-json .\\results\\minimum_and_retry\\minimum_and_retry.json --output-dir .\\results\\minimum_and_retry_600s --timeout-ms 600000 --seed 2 --jobs 2",
+  "z3": "4.16.0",
+  "source": "minimum_and_retry.json",
+  "summaries": [
+    {
+      "cipher": "PRINCE",
+      "total_k": 5,
+      "k1": 2,
+      "k2": 3,
+      "retry_statuses": [
+        "unknown"
+      ],
+      "conclusion": "still-unresolved"
+    },
+    {
+      "cipher": "PRINCE",
+      "total_k": 5,
+      "k1": 3,
+      "k2": 2,
+      "retry_statuses": [
+        "unknown"
+      ],
+      "conclusion": "still-unresolved"
+    }
+  ],
+  "attempts": [
+    {
+      "cipher": "PRINCE",
+      "total_k": 5,
+      "k1": 2,
+      "k2": 3,
+      "seed": 2,
+      "timeout_ms": 600000,
+      "solver_status": "unknown",
+      "runtime_seconds": 600.020563,
+      "constraints": 74,
+      "smt2_bytes": 97188,
+      "truth_table_check": "not-run",
+      "netlist": ""
+    },
+    {
+      "cipher": "PRINCE",
+      "total_k": 5,
+      "k1": 3,
+      "k2": 2,
+      "seed": 2,
+      "timeout_ms": 600000,
+      "solver_status": "unknown",
+      "runtime_seconds": 600.026879,
+      "constraints": 74,
+      "smt2_bytes": 97332,
+      "truth_table_check": "not-run",
+      "netlist": ""
+    }
+  ]
+}

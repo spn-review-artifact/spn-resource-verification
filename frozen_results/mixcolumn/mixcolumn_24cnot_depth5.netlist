@@ -1,0 +1,27 @@
+# uLBC/Midori MixColumn; output relabeling is free
+# physical_output_i_is_logical_output: [1, 0, 3, 2]
+# six gates per bit slice; four slices execute in parallel
+layer 1: CNOT q0 -> q4
+layer 1: CNOT q1 -> q5
+layer 1: CNOT q2 -> q6
+layer 1: CNOT q3 -> q7
+layer 2: CNOT q4 -> q8
+layer 2: CNOT q5 -> q9
+layer 2: CNOT q6 -> q10
+layer 2: CNOT q7 -> q11
+layer 3: CNOT q4 -> q12
+layer 3: CNOT q8 -> q0
+layer 3: CNOT q5 -> q13
+layer 3: CNOT q9 -> q1
+layer 3: CNOT q6 -> q14
+layer 3: CNOT q10 -> q2
+layer 3: CNOT q7 -> q15
+layer 3: CNOT q11 -> q3
+layer 4: CNOT q12 -> q0
+layer 4: CNOT q13 -> q1
+layer 4: CNOT q14 -> q2
+layer 4: CNOT q15 -> q3
+layer 5: CNOT q0 -> q4
+layer 5: CNOT q1 -> q5
+layer 5: CNOT q2 -> q6
+layer 5: CNOT q3 -> q7

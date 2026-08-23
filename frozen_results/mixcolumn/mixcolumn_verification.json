@@ -1,0 +1,42 @@
+{
+  "matrix": [
+    [
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0
+    ]
+  ],
+  "search_space": "all 20160 matrices in GL(4,2)",
+  "free_operation": "final output-wire relabeling",
+  "bit_slice_cnot_count": 6,
+  "bit_slice_physical_asap_depth": 5,
+  "column_cnot_count": 24,
+  "column_physical_asap_depth": 5,
+  "output_permutation_physical_to_logical": [
+    1,
+    0,
+    3,
+    2
+  ],
+  "verification": "pass-65536/65536",
+  "claim_scope": "shortest CNOT count under ancilla-free 4-wire BFS with free output relabeling; no global depth-optimality claim"
+}

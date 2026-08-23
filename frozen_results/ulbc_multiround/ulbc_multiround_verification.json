@@ -1,0 +1,81 @@
+{
+  "witness": "results\\inplace_toffoli_search\\ulbc_inplace_k4.json",
+  "kat_source": "data\\reference\\ulbc_kat.json",
+  "sbox_truth_table": "pass-16/16",
+  "test_vectors": [
+    {
+      "variant": "uLBC-128",
+      "plaintext": "2d33f9e14c935dc3150e07ef14909c24",
+      "key": "2f5a39f65ef0d47b4c2ae6b521fb0a08",
+      "ciphertext": "5384bf47150a1f05059c1e704894ca21",
+      "calculated_ciphertext": "5384bf47150a1f05059c1e704894ca21",
+      "encryption_check": "pass",
+      "recovered_plaintext": "2d33f9e14c935dc3150e07ef14909c24",
+      "inverse_check": "pass",
+      "round_trace_sha256": "00fd34880beb7f5e8e608f8786c0a86d104b11c6ff4dcce61037e0d1d4c2a20b",
+      "states_in_trace": 19
+    },
+    {
+      "variant": "uLBC-128",
+      "plaintext": "00000000000000000000000000000000",
+      "key": "00000000000000000000000000000000",
+      "ciphertext": "e6b6b249c25994a425c480b852f4899a",
+      "calculated_ciphertext": "e6b6b249c25994a425c480b852f4899a",
+      "encryption_check": "pass",
+      "recovered_plaintext": "00000000000000000000000000000000",
+      "inverse_check": "pass",
+      "round_trace_sha256": "fb225bbaa8e142d22b5ad9a9aeacf2fbb8ec76ffc3640df6392a25f4660e4385",
+      "states_in_trace": 19
+    },
+    {
+      "variant": "uLBC-256",
+      "plaintext": "2d6430850cad830b53764dad7be5c3a9",
+      "key": "2990cbcb613391be00a582cd722e610f42e65a592135ab5f4a85fb01222224e0",
+      "ciphertext": "b6cfa6a590dba5eaa5a7004e5a8339f4",
+      "calculated_ciphertext": "b6cfa6a590dba5eaa5a7004e5a8339f4",
+      "encryption_check": "pass",
+      "recovered_plaintext": "2d6430850cad830b53764dad7be5c3a9",
+      "inverse_check": "pass",
+      "round_trace_sha256": "544be9e9fafeb8fbb17b23ae7f55dad9a717759514e311f16af860e4bef229c3",
+      "states_in_trace": 23
+    },
+    {
+      "variant": "uLBC-256",
+      "plaintext": "00000000000000000000000000000000",
+      "key": "0000000000000000000000000000000000000000000000000000000000000000",
+      "ciphertext": "fb0be7250cfd59a9d2712fb1899ff396",
+      "calculated_ciphertext": "fb0be7250cfd59a9d2712fb1899ff396",
+      "encryption_check": "pass",
+      "recovered_plaintext": "00000000000000000000000000000000",
+      "inverse_check": "pass",
+      "round_trace_sha256": "7567ed14445ba36c16ec8283b6ebc8c5a67f61858286d9db1a004eabe6b351f7",
+      "states_in_trace": 23
+    },
+    {
+      "variant": "uLBC-384t",
+      "plaintext": "2d7d941a0f864e4b3a7e25e32fe97815",
+      "key": "08cac34637da2d2c54cbc0590cc13e8d62f1a18565a355824642fdef582d79f211a12c186c55e4b27b1999ae4db8ada5",
+      "ciphertext": "6bfe00ba63397825379e397efa11d15a",
+      "calculated_ciphertext": "6bfe00ba63397825379e397efa11d15a",
+      "encryption_check": "pass",
+      "recovered_plaintext": "2d7d941a0f864e4b3a7e25e32fe97815",
+      "inverse_check": "pass",
+      "round_trace_sha256": "49f2757b173ea85ac8dadc8126de3f35988353f8460ac80f181ee093a751a59e",
+      "states_in_trace": 31
+    },
+    {
+      "variant": "uLBC-384t",
+      "plaintext": "00000000000000000000000000000000",
+      "key": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "ciphertext": "64adeb0232294d9c1e268365764e674a",
+      "calculated_ciphertext": "64adeb0232294d9c1e268365764e674a",
+      "encryption_check": "pass",
+      "recovered_plaintext": "00000000000000000000000000000000",
+      "inverse_check": "pass",
+      "round_trace_sha256": "e8f6d1d2697f75acf96b540807445dd67aaf5dc43876bf13c5ab10556fce7ae6",
+      "states_in_trace": 31
+    }
+  ],
+  "summary": "pass-6/6 encryption and pass-6/6 inverse restoration",
+  "register_reuse_conclusion": "The same 128-bit state is overwritten by the verified in-place S-box in every round and is restored by reversing the complete cipher computation."
+}
