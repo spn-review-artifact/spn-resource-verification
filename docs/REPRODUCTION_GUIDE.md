@@ -1,7 +1,8 @@
 # Modular verification guide
 
-Run commands from the repository root. No command regenerates the proprietary
-search pipeline; each command checks one evidence layer.
+The released files support modular checking of the reported witnesses, fixed
+instances, resource tables, and validation data. They are intended for
+independent verification of the reported results.
 
 ## 1. Verify released S-box witnesses
 

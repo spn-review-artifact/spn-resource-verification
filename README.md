@@ -1,5 +1,5 @@
 # SPN Quantum-Resource Verification
 
-This repository contains verification code and supporting data for a study of quantum-resource estimation for lightweight SPN block ciphers. The materials include S-box witnesses, fixed SMT instances, resource-accounting scripts, uLBC scheduling and MixColumn checks, and comparison data.
+Code and supporting data for independently checking the reported quantum-resource results for lightweight SPN block ciphers.
 
-Reproduction commands and expected outputs are provided in the [reproduction guide](docs/REPRODUCTION_GUIDE.md). Python 3.10 or later and Z3 are required.
+The repository contains released S-box witnesses, fixed SMT instances, resource-accounting scripts, uLBC scheduling and MixColumn checks, validation tests, and comparison records. The files are organized for direct inspection and verification; Python 3.10 or later and Z3 are required for the solver-based checks.
