@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-"""Minimal public reference encoder for 4-bit depth-2 AND-XOR S-boxes.
+"""Reference encoder for 4-bit depth-2 AND-XOR S-boxes.
 
-This implementation deliberately omits production symmetry breaking, search
-heuristics, model ranking, sampling, and cluster orchestration.  It provides a
-transparent path from a 16-nibble LUT to SMT-LIB2, a SAT witness netlist, and
-an exhaustive 16-input functional check.
+This implementation provides a transparent path from a 16-nibble LUT to
+SMT-LIB2, a SAT witness netlist, and an exhaustive 16-input functional check.
 """
 
 from __future__ import annotations

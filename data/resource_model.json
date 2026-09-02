@@ -24,7 +24,7 @@
       "rounds": 18,
       "key_bits": 128,
       "block_bits": 128,
-      "pairs": 1,
+      "pairs": 2,
       "key_schedule_cnot": 0,
       "key_schedule_depth_upper_per_round": 0
     },
@@ -32,7 +32,7 @@
       "rounds": 22,
       "key_bits": 256,
       "block_bits": 128,
-      "pairs": 2,
+      "pairs": 3,
       "key_schedule_cnot": 3520,
       "key_schedule_depth_upper_per_round": 2
     },
@@ -40,7 +40,7 @@
       "rounds": 30,
       "key_bits": 384,
       "block_bits": 128,
-      "pairs": 3,
+      "pairs": 4,
       "key_schedule_cnot": 9600,
       "key_schedule_depth_upper_per_round": 3
     }

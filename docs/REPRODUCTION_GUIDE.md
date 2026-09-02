@@ -49,10 +49,10 @@ To exercise the increasing-`k` driver on a trivial affine permutation:
 python src/reference_smt_encoder.py --lut 0123456789ABCDEF --k-max 0
 ```
 
-This reference driver has no symmetry breaking or CNOT-ranking stage. It proves
-fixed-shape feasibility and can establish bounded minimum AND count only when
-all lower calls terminate UNSAT. A newly extracted SAT netlist is not promised
-to match the CNOT count of the separately released manuscript witness.
+The reference driver proves fixed-shape feasibility and can establish bounded
+minimum AND count only when all lower calls terminate UNSAT. Because an SMT
+solver may return any satisfying model, a newly extracted SAT netlist is not
+expected to be identical to the separately released manuscript witness.
 
 ## 4. Verify MixColumn
 
@@ -109,14 +109,17 @@ data and DORCIS published-only values.
 
 ## 9. Run consistency tests
 
-The tests are separated by evidence layer and may be run individually, for
-example:
+Run the full consistency-test suite with:
+
+```text
+python -m unittest discover -s tests -v
+```
+
+The tests are also separated by evidence layer and may be run individually,
+for example:
 
 ```text
 python -m unittest tests.test_artifact.SboxEvidenceTests -v
 python -m unittest tests.test_artifact.ResourceEvidenceTests -v
 python -m unittest tests.test_artifact.ExternalEvidenceTests -v
 ```
-
-No single wrapper is supplied for installing dependencies, running searches,
-executing all checks, and rebuilding manuscript tables.

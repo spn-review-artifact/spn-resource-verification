@@ -1,9 +1,7 @@
-# Public disclosure of the bounded S-box synthesis method
+# Bounded S-box synthesis method
 
 This document specifies the released search space and accompanies the minimal
-source implementation in `src/reference_smt_encoder.py`. The authors'
-production symmetry breaking, CNOT ranking, sampling, and orchestration code
-remain outside the public artifact.
+source implementation in `src/reference_smt_encoder.py`.
 
 ## Fixed feasibility problem
 
@@ -45,7 +43,7 @@ The fixed instances establish feasibility, while the bounded-search records
 state whether the lower shapes were proved infeasible or remained unresolved.
 No timeout is presented as a proof.
 
-## Reimplementation boundary
+## Reproduction notes
 
 An independent reader can use the released reference source to reconstruct the
 admitted mathematical encoding, compare it with the frozen SMT-LIB2 files,
@@ -53,9 +51,9 @@ rerun the six instances in any conforming SMT solver, and validate extracted
 witnesses. The included tests confirm that the reference encoder regenerates
 the constraint sets of all six frozen primary instances.
 
-The reference solver returns an arbitrary SAT model. It does not reproduce the
-production candidate-ranking stage, so a newly extracted witness can have a
-different CNOT count from the manuscript-selected fixed witness. The release
-therefore supports end-to-end reference feasibility synthesis and complete
-claim verification, but it does not claim byte-for-byte regeneration of the
-production pipeline.
+SMT solvers may return different satisfying models for the same feasible
+instance. A newly extracted witness can therefore have a different CNOT count
+from the manuscript-selected fixed witness. The released fixed instances,
+status records, and independently checked citation-facing witnesses make the
+feasibility and reported resource claims reproducible without requiring
+byte-for-byte identity between arbitrary SAT models.

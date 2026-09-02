@@ -1,7 +1,9 @@
-# Recorded environments and bounded-search parameters
+# Execution environments and bounded-search parameters
 
-The artifact records only environment facts captured from the execution hosts;
-no hardware value is reconstructed or guessed.
+The primary bounded-search records and the Linux extended-validation records
+were produced in separate execution environments. Per-attempt solver status,
+runtime, timeout, random seed, constraint count, and SMT2 size are recorded in
+`data/solver/` or `data/external/`, as applicable.
 
 ## Primary bounded AND search
 
@@ -13,9 +15,12 @@ no hardware value is reconstructed or guessed.
 - longer unresolved-instance retries: 300,000 ms at seed 1 and 600,000 ms at
   seed 2;
 - search range: increasing total AND count with all admitted `k1/k2`
-  partitions, bounded by the per-S-box `k_max` recorded in the solver tables;
+  partitions; the largest recorded total `k` is 4 for PRESENT, Midori, SKINNY,
+  and uLBC, 5 for GIFT, and 6 for PRINCE;
 - recorded per attempt: status, elapsed seconds, constraints, SMT2 bytes,
-  timeout, seed, and truth-table result when SAT.
+  timeout, seed, and truth-table result when SAT;
+- fixed primary instances: 72--76 constraints, as recorded in
+  `data/solver/fixed_instances.json`.
 
 ## Linux extended benchmarks
 
@@ -46,7 +51,3 @@ no hardware value is reconstructed or guessed.
 - allowed gate library: X, CNOT, CCNOT; no higher-control Toffoli;
 - logical input/output wire assignments: free;
 - ancilla limit: zero for the in-place search.
-
-The machine username, IP address, absolute binary path, and local working
-directory were removed because they are irrelevant to reproducibility and
-would compromise anonymous review.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate deterministic hashes for the selective public artifact."""
+"""Generate deterministic hashes for the public verification package."""
 
 from __future__ import annotations
 
@@ -38,7 +38,7 @@ def main() -> int:
     payload = {
         "schema": 1,
         "artifact": "anonymous-spn-quantum-resource-verification",
-        "release_type": "selective-claim-verification",
+        "release_type": "verification-package",
         "file_count": len(records),
         "files": records,
     }

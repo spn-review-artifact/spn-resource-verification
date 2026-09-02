@@ -8,9 +8,8 @@ education, and research concerning the accompanying manuscript. Results may
 be quoted with appropriate citation to the final paper and this artifact.
 
 No permission is granted to relicense, sell, sublicense, commercially exploit,
-or incorporate the released implementation into a commercial product. The
-release does not grant rights to unreleased synthesis code, search heuristics,
-or other methods described as excluded in ARTIFACT_SCOPE.md.
+or incorporate the released implementation into a commercial product. This
+license applies only to the files distributed in this repository.
 
 Files and data derived from third-party publications or tools remain subject
 to their original copyrights and licenses. No warranty is provided. The
