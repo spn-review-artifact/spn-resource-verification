@@ -4,6 +4,57 @@ The released files support modular checking of the reported witnesses, fixed
 instances, resource tables, and validation data. They are intended for
 independent verification of the reported results.
 
+## R2 entry points
+
+Current manuscript numbering is documented in `docs/PAPER_TABLE_MAP.md`.
+The legacy filename `table10_main.csv` now corresponds to manuscript Table 13.
+
+For the Table 9 functional checks:
+
+```text
+python -B src/verify_r2_ulbc_gate_sequence.py --check-record
+```
+
+Expected totals: six official encryption/inverse vectors, 146 round-boundary
+states, and 12 multi-pair cases for r=2,3,4. Each case checks the joint flag,
+ideal phase sign, comparator reversal, key restoration, and workspace cleanup.
+The temporary-AND erasure is modeled by its logical action. These are functional
+checks of reconstructed logical sequences, not physical Clifford+T simulation.
+Resource tables are checked separately against their declared accounting model.
+
+For Table 14 and its Table 1 CNOT convention:
+
+```text
+python -B src/verify_table14.py --check-record
+```
+
+Expected: eight S-box rows matching `results/r2/table14_check.json`. QuSAT's
+CNOT estimate is CNOT-outside-QAND + 9k. A baseline clean wrapper has width 9,
+CNOT estimate 2c+4+20q, T-count 8q, and online T-depth 2q, where c and q are
+the native CNOT and Toffoli counts. QuSAT widths are the declared allocations;
+baseline widths use serial scratch reuse. These are specified schedules.
+
+Six primary QuSAT rows have released forward netlists. RECTANGLE and KLEIN
+use their selected historical seed-0 records. Their table conversions are
+checked against those records; original selected netlists are not included.
+Strict gate-file coverage can be requested with:
+
+```text
+python -B src/verify_table14.py --require-all-witnesses
+```
+
+That strict check reports the two record-only rows as lacking gate-file
+coverage. The normal check reports record-based and witness-based coverage
+explicitly.
+
+GIFT's minimum status includes the existing 300-second retry in
+`data/solver/retry_300s_seed1.json`, which resolved the last four-AND partition
+as UNSAT. PRINCE's two unresolved five-AND partitions remain UNKNOWN at the
+600-second per-call limit. Here, k=6 denotes the AND count of the verified
+depth-2 PRINCE implementation, rather than its unrestricted multiplicative
+complexity; existence of a five-AND circuit within this encoding remains
+unresolved.
+
 ## 1. Verify released S-box witnesses
 
 ```text

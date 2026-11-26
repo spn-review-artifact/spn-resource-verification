@@ -19,7 +19,8 @@
       "reported_and_depth": 2,
       "reported_logical_cnot": 49,
       "reported_width": 19,
-      "minimum_status": "verified-best-found-lower-instance-unknown"
+      "minimum_status": "minimum-proved-within-bounded-AND-depth-2-space",
+      "minimum_evidence": "data/solver/primary_minimum_and_attempts.csv; data/solver/retry_300s_seed1.json: k=4, k1=2, k2=2 resolved UNSAT in 165.331957 seconds, seed 1"
     },
     "Midori": {
       "lut": "CAD3EBF789150246",

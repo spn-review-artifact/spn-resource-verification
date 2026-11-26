@@ -22,6 +22,13 @@ and verified resource results, but not upstream source code.
 DORCIS values in this artifact are explicitly labelled `published-only` and
 are not described as locally rerun results.
 
+The R2 Table 14 record additionally identifies the public circuit source at
+https://github.com/matthewchunqed/dorcis-public and pins its inspected revision
+in `data/external/dorcis_selected_circuits.json`. The selected circuit indices
+are 1 for PRESENT, GIFT, and SKINNY, and 2 for PRINCE and RECTANGLE. Native gate
+counts and source links are provided for the clean-wrapper conversion; upstream
+source files are not vendored and no DORCIS synthesis rerun is claimed.
+
 ## LWC-Q / Bijwe et al.
 
 - Repository: https://github.com/amitcrypto/LWC-Q

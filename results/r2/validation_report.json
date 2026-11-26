@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-25",
+  "status": "PASS",
+  "test_suite": "python -B -m unittest discover -s tests -v",
+  "test_count": 17,
+  "validation_python": "3.12.14",
+  "validation_z3": "4.16.0",
+  "table9": {
+    "official_vectors": 6,
+    "round_boundary_states": 146,
+    "multi_pair_cases": 12,
+    "scope": "Logical basis-state functional checks with ideal erasure and phase sign"
+  },
+  "table14": {
+    "manuscript_rows_matched": [
+      "PRESENT",
+      "GIFT",
+      "Midori",
+      "PRINCE",
+      "SKINNY",
+      "uLBC",
+      "RECTANGLE",
+      "KLEIN"
+    ],
+    "primary_witness_rows": 6,
+    "historical_extended_record_rows": 2,
+    "record_only_extended_rows": [
+      "RECTANGLE",
+      "KLEIN"
+    ]
+  },
+  "original_resource_model_and_result_tables_unchanged": true,
+  "archival_release_created": false,
+  "doi_created": false,
+  "recheck": {
+    "date": "2026-11-26",
+    "status": "PASS",
+    "test_suite": "python -B -m unittest discover -s tests -v",
+    "test_count": 17,
+    "validation_python": "3.10.0",
+    "validation_z3": "4.15.4",
+    "scope": "Same consistency suite; manuscript resource values and historical solver records retained."
+  }
+}

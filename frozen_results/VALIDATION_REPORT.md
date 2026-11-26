@@ -1,4 +1,28 @@
-# Release validation report
+# Verification report
+
+## R2 working-repository validation: 2026-11-25
+
+This entry records a working-repository update, not a tagged archival release.
+
+- Full consistency suite: 17 tests, PASS (Python 3.12.14, Z3 4.16.0).
+- Rechecked on 2026-11-26: 17 tests, PASS (Python 3.10.0, Z3 4.15.4).
+- Table 9 functional replay: 6 official vectors, 146 round-boundary states,
+  and 12 multi-pair oracle cases, PASS.
+- Table 14: all 8 rows match the manuscript's declared clean-interface and
+  4T conversion, including native LIGHTER-R counts.
+- The six primary QuSAT rows have released witness files; RECTANGLE and KLEIN
+  use selected historical seed-0 records. These two rows have record-based
+  conversion checks and are not counted as released gate files.
+- GIFT's bounded-minimum status includes its existing conclusive 300-second
+  UNSAT retry. PRINCE's unresolved lower instances remain UNKNOWN.
+- Existing resource-model values and original result tables are unchanged.
+- No release tag, archival record, or DOI is created by this update.
+
+The functional replay models temporary-AND erasure and phase signs at the
+logical basis-state level. Resource-model checks are separate from those
+functional checks. Details are recorded in `results/r2/validation_report.json`.
+
+## Historical validation
 
 Validation date: 2026-09-02 (Asia/Shanghai)
 

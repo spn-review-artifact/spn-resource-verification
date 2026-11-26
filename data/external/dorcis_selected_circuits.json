@@ -1,0 +1,82 @@
+{
+  "upstream_repository": "https://github.com/matthewchunqed/dorcis-public",
+  "source_revision": "fa8f299c6a91447ad3f40b429c922e5740ce7242",
+  "evidence": "Published circuit inspection; no DORCIS synthesis rerun.",
+  "circuits": [
+    {
+      "sbox": "PRESENT",
+      "lut": "C56B90AD3EF84712",
+      "circuit_index": 1,
+      "source_url": "https://github.com/matthewchunqed/dorcis-public/blob/fa8f299c6a91447ad3f40b429c922e5740ce7242/4-Bit%20Implementations/PRESENT%20C56B90AD3EF84712/implementation_C56B90AD3EF84712_1.c",
+      "source_path": "4-Bit Implementations/PRESENT C56B90AD3EF84712/implementation_C56B90AD3EF84712_1.c",
+      "native_counts": {
+        "X": 2,
+        "CNOT": 5,
+        "Toffoli": 4
+      },
+      "native_width": 4,
+      "published_t_depth": 4,
+      "published_depth": 32
+    },
+    {
+      "sbox": "GIFT",
+      "lut": "1A4C6F392DB7508E",
+      "circuit_index": 1,
+      "source_url": "https://github.com/matthewchunqed/dorcis-public/blob/fa8f299c6a91447ad3f40b429c922e5740ce7242/4-Bit%20Implementations/GIFT%201A4C6F392DB7508E/implementation_1A4C6F392DB7508E_1.c",
+      "source_path": "4-Bit Implementations/GIFT 1A4C6F392DB7508E/implementation_1A4C6F392DB7508E_1.c",
+      "native_counts": {
+        "X": 5,
+        "CNOT": 4,
+        "Toffoli": 4
+      },
+      "native_width": 4,
+      "published_t_depth": 4,
+      "published_depth": 31
+    },
+    {
+      "sbox": "PRINCE",
+      "lut": "BF32AC916780E5D4",
+      "circuit_index": 2,
+      "source_url": "https://github.com/matthewchunqed/dorcis-public/blob/fa8f299c6a91447ad3f40b429c922e5740ce7242/4-Bit%20Implementations/PRINCE%20BF32AC916780E5D4/implementation_BF32AC916780E5D4_2.c",
+      "source_path": "4-Bit Implementations/PRINCE BF32AC916780E5D4/implementation_BF32AC916780E5D4_2.c",
+      "native_counts": {
+        "X": 1,
+        "CNOT": 9,
+        "Toffoli": 5
+      },
+      "native_width": 4,
+      "published_t_depth": 5,
+      "published_depth": 42
+    },
+    {
+      "sbox": "SKINNY",
+      "lut": "C6901A2B385D4E7F",
+      "circuit_index": 1,
+      "source_url": "https://github.com/matthewchunqed/dorcis-public/blob/fa8f299c6a91447ad3f40b429c922e5740ce7242/4-Bit%20Implementations/SKINNY%20C6901A2B385D4E7F/implementation_C6901A2B385D4E7F_1.c",
+      "source_path": "4-Bit Implementations/SKINNY C6901A2B385D4E7F/implementation_C6901A2B385D4E7F_1.c",
+      "native_counts": {
+        "X": 8,
+        "CNOT": 0,
+        "Toffoli": 4
+      },
+      "native_width": 4,
+      "published_t_depth": 4,
+      "published_depth": 30
+    },
+    {
+      "sbox": "RECTANGLE",
+      "lut": "65CA1E79B03D8F42",
+      "circuit_index": 2,
+      "source_url": "https://github.com/matthewchunqed/dorcis-public/blob/fa8f299c6a91447ad3f40b429c922e5740ce7242/4-Bit%20Implementations/RECTANGLE%2065CA1E79B03D8F42/implementation_65CA1E79B03D8F42_2.c",
+      "source_path": "4-Bit Implementations/RECTANGLE 65CA1E79B03D8F42/implementation_65CA1E79B03D8F42_2.c",
+      "native_counts": {
+        "X": 2,
+        "CNOT": 5,
+        "Toffoli": 4
+      },
+      "native_width": 4,
+      "published_t_depth": 4,
+      "published_depth": 31
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "scope": "Basis-state functional verification of the reconstructed logical gate sequence; ideal temporary-AND erasure and phase sign.",
+  "resource_scope": "Functional checks only; tabulated resource budgets are evaluated separately by the declared resource model.",
+  "sbox_clean_interface_pass_per_map": 256,
+  "official_vectors_passed": 6,
+  "round_checkpoints_passed": 146,
+  "oracle_cases_passed": 12,
+  "results": [
+    {
+      "variant": "uLBC-128",
+      "rounds": 18,
+      "full_round_kat_and_inverse_passed": 2,
+      "round_checkpoints_passed": 38,
+      "oracle_pairs": 2,
+      "all_match_passed": 1,
+      "single_pair_mismatch_passed": 2,
+      "ideal_phase_and_workspace_restoration_passed": 3,
+      "encryption_workspace_budget": 384,
+      "oracle_workspace_budget": 1023,
+      "encryption_tape_sha256": "b928946a3300f515753053e826afd85ad6384bffc3eba04077c697726f38b00e"
+    },
+    {
+      "variant": "uLBC-256",
+      "rounds": 22,
+      "full_round_kat_and_inverse_passed": 2,
+      "round_checkpoints_passed": 46,
+      "oracle_pairs": 3,
+      "all_match_passed": 1,
+      "single_pair_mismatch_passed": 3,
+      "ideal_phase_and_workspace_restoration_passed": 4,
+      "encryption_workspace_budget": 512,
+      "oracle_workspace_budget": 1919,
+      "encryption_tape_sha256": "44e437ecf8a0ab77149d60544b63683f96f1cbf97679dc9c42bafb4d82ec93a1"
+    },
+    {
+      "variant": "uLBC-384t",
+      "rounds": 30,
+      "full_round_kat_and_inverse_passed": 2,
+      "round_checkpoints_passed": 62,
+      "oracle_pairs": 4,
+      "all_match_passed": 1,
+      "single_pair_mismatch_passed": 4,
+      "ideal_phase_and_workspace_restoration_passed": 5,
+      "encryption_workspace_budget": 640,
+      "oracle_workspace_budget": 3071,
+      "encryption_tape_sha256": "ede32f2de0e72075bf8ca38849a0c9df9d0d7da849b1943fdf9ac1307356ef42"
+    }
+  ]
+}

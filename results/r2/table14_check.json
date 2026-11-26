@@ -1,0 +1,259 @@
+{
+  "scope": "Table 14 clean interface and specified 4T schedules; CNOT estimates include lowering without cross-gadget cancellation.",
+  "width_scope": "Declared QuSAT allocations versus a serial-scratch baseline wrapper; width is not a global minimum.",
+  "record_only_extended_rows": [
+    "RECTANGLE",
+    "KLEIN"
+  ],
+  "rows": [
+    {
+      "sbox": "PRESENT",
+      "qusat": {
+        "width": 18,
+        "cnot_outside_qand": 50,
+        "cnot_estimate_4t": 86,
+        "t_count": 16,
+        "online_t_depth": 2,
+        "evidence": "released-witness-and-mapping-accounting"
+      },
+      "lighter_r_wrapper": {
+        "width": 9,
+        "cnot_estimate_4t": 94,
+        "t_count": 32,
+        "online_t_depth": 8,
+        "native_counts": {
+          "X": 2,
+          "CNOT": 5,
+          "Toffoli": 4
+        }
+      },
+      "dorcis_wrapper": {
+        "width": 9,
+        "cnot_estimate_4t": 94,
+        "t_count": 32,
+        "online_t_depth": 8,
+        "circuit_index": 1,
+        "native_counts": {
+          "X": 2,
+          "CNOT": 5,
+          "Toffoli": 4
+        },
+        "source_url": "https://github.com/matthewchunqed/dorcis-public/blob/fa8f299c6a91447ad3f40b429c922e5740ce7242/4-Bit%20Implementations/PRESENT%20C56B90AD3EF84712/implementation_C56B90AD3EF84712_1.c",
+        "status": "published-circuit; no synthesis rerun"
+      }
+    },
+    {
+      "sbox": "GIFT",
+      "qusat": {
+        "width": 19,
+        "cnot_outside_qand": 49,
+        "cnot_estimate_4t": 94,
+        "t_count": 20,
+        "online_t_depth": 2,
+        "evidence": "released-witness-and-mapping-accounting"
+      },
+      "lighter_r_wrapper": {
+        "width": 9,
+        "cnot_estimate_4t": 88,
+        "t_count": 32,
+        "online_t_depth": 8,
+        "native_counts": {
+          "X": 4,
+          "CNOT": 2,
+          "Toffoli": 4
+        }
+      },
+      "dorcis_wrapper": {
+        "width": 9,
+        "cnot_estimate_4t": 92,
+        "t_count": 32,
+        "online_t_depth": 8,
+        "circuit_index": 1,
+        "native_counts": {
+          "X": 5,
+          "CNOT": 4,
+          "Toffoli": 4
+        },
+        "source_url": "https://github.com/matthewchunqed/dorcis-public/blob/fa8f299c6a91447ad3f40b429c922e5740ce7242/4-Bit%20Implementations/GIFT%201A4C6F392DB7508E/implementation_1A4C6F392DB7508E_1.c",
+        "status": "published-circuit; no synthesis rerun"
+      }
+    },
+    {
+      "sbox": "Midori",
+      "qusat": {
+        "width": 20,
+        "cnot_outside_qand": 55,
+        "cnot_estimate_4t": 91,
+        "t_count": 16,
+        "online_t_depth": 2,
+        "evidence": "released-witness-and-mapping-accounting"
+      },
+      "lighter_r_wrapper": {
+        "width": 9,
+        "cnot_estimate_4t": 92,
+        "t_count": 32,
+        "online_t_depth": 8,
+        "native_counts": {
+          "X": 2,
+          "CNOT": 4,
+          "Toffoli": 4
+        }
+      },
+      "dorcis_wrapper": null
+    },
+    {
+      "sbox": "PRINCE",
+      "qusat": {
+        "width": 23,
+        "cnot_outside_qand": 79,
+        "cnot_estimate_4t": 133,
+        "t_count": 24,
+        "online_t_depth": 2,
+        "evidence": "released-witness-and-mapping-accounting"
+      },
+      "lighter_r_wrapper": {
+        "width": 9,
+        "cnot_estimate_4t": 118,
+        "t_count": 40,
+        "online_t_depth": 10,
+        "native_counts": {
+          "X": 3,
+          "CNOT": 7,
+          "Toffoli": 5
+        }
+      },
+      "dorcis_wrapper": {
+        "width": 9,
+        "cnot_estimate_4t": 122,
+        "t_count": 40,
+        "online_t_depth": 10,
+        "circuit_index": 2,
+        "native_counts": {
+          "X": 1,
+          "CNOT": 9,
+          "Toffoli": 5
+        },
+        "source_url": "https://github.com/matthewchunqed/dorcis-public/blob/fa8f299c6a91447ad3f40b429c922e5740ce7242/4-Bit%20Implementations/PRINCE%20BF32AC916780E5D4/implementation_BF32AC916780E5D4_2.c",
+        "status": "published-circuit; no synthesis rerun"
+      }
+    },
+    {
+      "sbox": "SKINNY",
+      "qusat": {
+        "width": 17,
+        "cnot_outside_qand": 53,
+        "cnot_estimate_4t": 89,
+        "t_count": 16,
+        "online_t_depth": 2,
+        "evidence": "released-witness-and-mapping-accounting"
+      },
+      "lighter_r_wrapper": {
+        "width": 9,
+        "cnot_estimate_4t": 84,
+        "t_count": 32,
+        "online_t_depth": 8,
+        "native_counts": {
+          "X": 8,
+          "CNOT": 0,
+          "Toffoli": 4
+        }
+      },
+      "dorcis_wrapper": {
+        "width": 9,
+        "cnot_estimate_4t": 84,
+        "t_count": 32,
+        "online_t_depth": 8,
+        "circuit_index": 1,
+        "native_counts": {
+          "X": 8,
+          "CNOT": 0,
+          "Toffoli": 4
+        },
+        "source_url": "https://github.com/matthewchunqed/dorcis-public/blob/fa8f299c6a91447ad3f40b429c922e5740ce7242/4-Bit%20Implementations/SKINNY%20C6901A2B385D4E7F/implementation_C6901A2B385D4E7F_1.c",
+        "status": "published-circuit; no synthesis rerun"
+      }
+    },
+    {
+      "sbox": "uLBC",
+      "qusat": {
+        "width": 18,
+        "cnot_outside_qand": 41,
+        "cnot_estimate_4t": 77,
+        "t_count": 16,
+        "online_t_depth": 2,
+        "evidence": "released-witness-and-mapping-accounting"
+      },
+      "lighter_r_wrapper": {
+        "width": 9,
+        "cnot_estimate_4t": 94,
+        "t_count": 32,
+        "online_t_depth": 8,
+        "native_counts": {
+          "X": 1,
+          "CNOT": 5,
+          "Toffoli": 4
+        }
+      },
+      "dorcis_wrapper": null
+    },
+    {
+      "sbox": "RECTANGLE",
+      "qusat": {
+        "width": 11,
+        "cnot_outside_qand": 62,
+        "cnot_estimate_4t": 98,
+        "t_count": 16,
+        "online_t_depth": 2,
+        "evidence": "historical-seed-0-record"
+      },
+      "lighter_r_wrapper": {
+        "width": 9,
+        "cnot_estimate_4t": 90,
+        "t_count": 32,
+        "online_t_depth": 8,
+        "native_counts": {
+          "X": 4,
+          "CNOT": 3,
+          "Toffoli": 4
+        }
+      },
+      "dorcis_wrapper": {
+        "width": 9,
+        "cnot_estimate_4t": 94,
+        "t_count": 32,
+        "online_t_depth": 8,
+        "circuit_index": 2,
+        "native_counts": {
+          "X": 2,
+          "CNOT": 5,
+          "Toffoli": 4
+        },
+        "source_url": "https://github.com/matthewchunqed/dorcis-public/blob/fa8f299c6a91447ad3f40b429c922e5740ce7242/4-Bit%20Implementations/RECTANGLE%2065CA1E79B03D8F42/implementation_65CA1E79B03D8F42_2.c",
+        "status": "published-circuit; no synthesis rerun"
+      }
+    },
+    {
+      "sbox": "KLEIN",
+      "qusat": {
+        "width": 12,
+        "cnot_outside_qand": 87,
+        "cnot_estimate_4t": 141,
+        "t_count": 24,
+        "online_t_depth": 2,
+        "evidence": "historical-seed-0-record"
+      },
+      "lighter_r_wrapper": {
+        "width": 9,
+        "cnot_estimate_4t": 116,
+        "t_count": 40,
+        "online_t_depth": 10,
+        "native_counts": {
+          "X": 2,
+          "CNOT": 6,
+          "Toffoli": 5
+        }
+      },
+      "dorcis_wrapper": null
+    }
+  ]
+}
